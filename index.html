@@ -8,36 +8,12 @@
 <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <style type="text/css">
-
-.container {
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
+.noHover a:hover {
+    background:none;
 }
-
-.inner-container {
-	width: 700px;
-	position: absolute;
-}
-.noHover a:hover{
-	font: 36px/18px 'Over the Rainbow', cursive;
-	text-decoration: none;
-	color: #2e1963;
-}
-
-.textbox{
-	width: 600px;
-	margin-top: 300px;
-	left: 100px;
-}
-#zindex{
-	z-index: 8;
-}
-
 body{
 	background-color: rgba(133, 50, 250, .75);
 }
-
 </style>
 </head>
 
@@ -46,10 +22,10 @@ body{
 <div class="inner-container">
 
 <div class="noHover">
-	<a href="core.html"><h1 id="to_cluster">Pointillism</h1></a>
+    <h1><a href="core.html" id="to_cluster">Pointillism</a></h1>
 </div>
 
-<div class="textbox" id="zindex">
+<div class="textbox">
 	<p>tiny, juxtaposed dots of multi-colored paint that allow the viewer's eye to blend the colors optically, rather than having the colors physically blended</p>
 </div>
 

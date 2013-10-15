@@ -1,88 +1,71 @@
 body {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
-	background: 
-	url(imgs/layer4.png) repeat fixed 40% 0,
-	url(imgs/layer3.png) repeat fixed -80% 0,
-	url(imgs/layer2.png) repeat fixed -130% 0,
-	url(imgs/layer1.png) repeat fixed 100% 0;
-}
-
-body {
+	background:
+	url(../imgs/layer4.png) repeat fixed 40% 0,
+	url(../imgs/layer3.png) repeat fixed -80% 0,
+	url(../imgs/layer2.png) repeat fixed -130% 0,
+	url(../imgs/layer1.png) repeat fixed 100% 0;
 	font-size: 20px;
 	line-height: 26px;
     font-family: 'Over the Rainbow', cursive;
 	text-decoration: none;
 	color: #330066;
+    text-align:center;
+}
+
+.inner-container {
+    width:920px;
+    margin:0 auto;
 }
 
 /*-------Menu-----------*/
 
-#menuBubs {
-	position: absolute;
-	top: 205px;
-	left: -80px;
+#menuList {
+    background:url(../imgs/bubs.png) 50% 0 no-repeat;
+    margin:0;
+    padding:30px 0;
 }
-
-ul{
-	position: absolute;
-	width: 900px;
-	margin-left: -90px;
-	margin-top: 300px;
-	z-index: 2;
-}
-
 #menuList li{
 	font-family: 'Over the Rainbow', cursive;
 	display: inline-block;
-	margin-right: 30px;
+    margin:0 18px;
 }
 
 
 /* ----------------------Menu Links-------------------------------------- */
-	
-.youAreHere {
-	font: 38px/18px 'Over the Rainbow', cursive;
+
+a {
+	font: 36px/18px 'Over the Rainbow', cursive;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #ffffff;
+}
+a.youAreHere {
 	color: #c34900;
 }
-
-a:link {
-	font: 36px/18px 'Over the Rainbow', cursive;
-	text-decoration: none; 
-	color: #ffffff;
+.menuList a {
+    display:inline-block;
+    min-width:100px;
+    padding-bottom:25px;
+    text-align:center;
 }
-	
-a:visited {
-	font: 36px/18px 'Over the Rainbow', cursive; 
-	text-decoration: none; 
-	color: #ffffff;
-}
-
-a:hover {
-	display: inline-block;
-	background-position: 0 100px;
-	position: absolute;
-	top: -20;
-	height: 100px;
-	width: 200px;
-	background: url(imgs/menuLinkRollover.png) 0 0 no-repeat;
-	z-index: 8;
+.menuList a:hover {
+	background: url(../imgs/menuLinkRollover.png) 50% bottom no-repeat;
 	text-decoration: none;
 }
 
-	
+
 a:active{
-	font: 36px/18px 'Over the Rainbow', cursive;
-	text-decoration: none; 
+	text-decoration: none;
 	color: #ffffff;
 }
 
 /* ---------Core Page Image Positions and Transforms------------------- */
-
-# a:hover img {
-	filter: blur(direction=270, strength=50);
-	opacity: 0.5;
-}
 
 * {
 	-webkit-box-sizing: border-box;
@@ -99,113 +82,51 @@ a:active{
 	box-shadow: 5px 5px 5px 5px #111;
 }
 
+#beach,
+#castle,
+#chorus {
+    display:inline-block;
+    vertical-align:middle;
+    line-height:300px;
+    margin:30px 10px;
+}
+
 #beach img{
-	position: absolute;
-	left: -100px;
-	top: 400px;
 	transform: rotate(-7deg);
 	-webkit-transform:rotate(-7deg);
 }
-
-.zoom img{
-	height: 178px;
-	width: 256px;
-	padding: 3px;
-	border: 2px solid black;
-	background color: #ff0;
-
-}
-
-#castle img{
-	position: absolute;
-	left: 190px;
-	top: 400px;
-
-}
-
-.pan img{
-	filter: none;	
-	padding: 3px;
-	border: 2px solid black;
-	background color: #ff0;
-
-}
-
 #chorus img{
-	position: absolute;
-	left: 480px;
-	top: 350px;
 	transform: rotate(7deg);
 	-webkit-transform:rotate(7deg);
 }
 
-.vPan img{
-	padding: 3px;
-	border: 2px solid black;
-	background color: #ff0;
-}
-
 /*-----------------------Cluster Header Font------------------*/
-#to_cluster.clustered {
-	margin-top: -50px;
+h1 {
+    height:250px;
 }
-
 #to_cluster {
-	position: absolute;
-	text-indent: -9999px;
-	width: 1150px;
-	left: 50%;
-	margin-left: -575px;
+    position:absolute;
+    text-indent:-9999em;
+	width: 100%;
 	font-family: sans-serif;
 	font-weight: bold;
-	line-height: 200%;
 	display: block;
 	font-size: 200px;
-	height: 1800px;
-	top: 100px;
+	height: 200px;
 }
 
-
 .clustered svg {
-  z-index: 2;
-  position: absolute;
-  top: -50px;
-  left: 0;  
+    width:100%;
+    display:block;
 }
 
 /*---------------------Level 2 CSS---------------*/
 
+#back,
 #level2Links {
-	position: absolute;
-	top: 500px;
-	left: 50px;
+    margin:20px 0;
 }
-
-/*-----hover links------*/
-#level2Links {
-	background-position: 0 100px;
-	top: 450px;
-	height: 100px;
-	width: 200px;
-	z-index: 6;
-}
-
-/*-------Signac--------*/
-#boats img{
-	position: absolute;
-	top: 400px;
-	right: 80px;
-}
-.boats img{
-	padding: 3px;
-	border: 2px solid black;
-	background color: #ff0;
-	-webkit-transition-property: 200px, 250px;
-    -webkit-transition-duration: 1s;
-}
-.boats a:hover{
-	height: 800px;
-	width: 1000px;
-	-webkit-transition-property: 800px, 1000px;
-    -webkit-transition-duration: 1s;
+#back a,
+#level2Links a {
+    margin:0 20px;
 }
