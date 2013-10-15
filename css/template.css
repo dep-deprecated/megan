@@ -130,3 +130,13 @@ h1 {
 #level2Links a {
     margin:0 20px;
 }
+
+/*-------Signac--------*/
+.boats img {
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+.boats img:hover {
+    width:350px;
+    height:300px;
+}
